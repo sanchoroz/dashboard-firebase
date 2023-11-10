@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(141, 206, 241);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 15px;
+  background: rgb(230, 175, 175);
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 15px;
+  background: rgb(182, 246, 182);
+}
+
+.login li {
+  margin-left: 15px;
+}
+.nav li {
+  margin-left: 15px;
+}
