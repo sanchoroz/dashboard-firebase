@@ -4,14 +4,14 @@ import React from "react";
 import { UserAuth } from "../../context/store";
 import { withProtected } from "../../hooks/route";
 
-function Profile() {
+function Users() {
   const { user, signin, signup, logout } = UserAuth();
 
   return (
     <>
-      <div>Profile | Welcome, {user.email}!</div>
+      <div>Users | Welcome, {user.email}!</div>
     </>
   );
 }
 
-export default withProtected(Profile);
+export default withProtected(Users);

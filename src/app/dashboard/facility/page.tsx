@@ -1,7 +1,4 @@
 "use client";
-//import styles from "../page.module.css";
-import styles from "./facility.module.css";
-import "../page.module.css";
 import React, { useEffect } from "react";
 import { UserAuth } from "../../context/store";
 import {
@@ -140,13 +137,13 @@ function Facility() {
 
   return (
     <>
-      <div className={styles.root}>Facility | Welcome, {user.email}!</div>
+      <div>Facility | Welcome, {user.email}!</div>
 
-      <div className={styles.add}>
-        <div className={styles.createUserContainer}>
-          <div className={styles.register}>
+      <div>
+        <div>
+          <div>
             <form onSubmit={handleSubmit}>
-              <div className={styles.create}>
+              <div>
                 <h1>Create new Facility </h1>
 
                 <label htmlFor="">Facility name</label>

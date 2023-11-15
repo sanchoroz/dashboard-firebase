@@ -1,6 +1,5 @@
-import "./globals.css";
 import { UserContextProvider } from "./context/store";
-import Navbar from "./components/Navbar/Navbar";
+import "./ui/globals.css";
 
 export default function RootLayout({
   children,
@@ -15,10 +14,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <UserContextProvider>
-          <Navbar />
-          {children}
-        </UserContextProvider>
+        <UserContextProvider>{children}</UserContextProvider>
       </body>
     </html>
   );
