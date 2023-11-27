@@ -35,6 +35,7 @@ export const createFacility = functions.https.onCall((data, context) => {
   }
   admin.firestore().collection("facilities").add({
     name: data.name,
+    category: data.category,
     sku: data.sku,
     imageUrl: data.imageUrl,
   });

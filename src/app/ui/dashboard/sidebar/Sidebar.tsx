@@ -25,7 +25,7 @@ const menuItems = [
       },
       {
         title: "Facilities",
-        path: "/dashboard/facility",
+        path: "/dashboard/facilities",
         icon: <MdBroadcastOnHome />,
       },
       {
@@ -63,7 +63,7 @@ const Sidebar = () => {
         <div className={styles.userDetails}>
           <span className={styles.username}>Alex Roz</span>
           <span className={styles.userTitle}>Administrator</span>
-          <span className={styles.userTitle}>{user.email}</span>
+          {user && <span className={styles.userTitle}>{user.email}</span>}
         </div>
       </div>
 

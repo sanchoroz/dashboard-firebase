@@ -1,5 +1,5 @@
-import Navbar from "../ui/dashboard/navbar/Navbar";
-import Sidebar from "../ui/dashboard/sidebar/Sidebar";
+import Navbar from "../ui/dashboard/navbar/navbar";
+import Sidebar from "../ui/dashboard/sidebar/sidebar";
 import styles from "../ui/dashboard/dashboard.module.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
